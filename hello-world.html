@@ -188,6 +188,8 @@
     
 <script type="text/javascript">
 
+
+//// 슬라이드 관련된 코드입니다.
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -206,15 +208,17 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 
-//////////////////////////////////////////////////
 
+
+//////구글 map 관련된 소스입니다.
 
 var map;
 var maxZoomService;
 var infoWindow;
 var sungkyul ={lat: 37.379950, lng: 126.926889};
 
-function initMap() {
+//현재 실행 함수
+function initMap()  {
   map = new google.maps.Map(document.getElementById('my-custom-map'), {
     zoom: 15,
     center: {lat: 37.379950, lng: 126.926889},
@@ -245,6 +249,8 @@ function showMaxZoom(e) {
   });
 }
 
+
+//마커함수 
 function initMap_marker() {
   var uluru ={lat: 37.379950, lng: 126.926889};
   var map = new google.maps.Map(document.getElementById('my-custom-map'), {
