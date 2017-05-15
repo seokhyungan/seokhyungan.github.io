@@ -52,6 +52,18 @@
 
     <style type="text/css">
         @page { size: auto; margin: 0mm;}
+	    
+	@media print {
+    		a {
+        	display:none;
+   		}
+	 }
+
+	 @media screen and projection {
+  		a {
+        	display:inline;
+   		}
+ 	 }
 
         .myButton
         {
